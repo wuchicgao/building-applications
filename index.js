@@ -4,4 +4,4 @@ const port = 8080
 
 app.get('/', (req, res) => res.send('Hello OpenShift!'))
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, '0.0.0.0', () => console.log(`Example app listening on port ${port}`))
